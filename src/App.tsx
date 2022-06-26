@@ -1,9 +1,8 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React from 'react';
 import Banner from './components/banner'
 import './App.scss';
 
 function App() {
-  console.log('haha')
 
   return (
     <div className="app" >
