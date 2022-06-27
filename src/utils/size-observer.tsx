@@ -8,6 +8,7 @@ const SizeObserver: React.FC<Props> = ({ children }) => {
 
 	function handleResize() {
 		console.log(window.innerWidth)
+		console.log('hi')
 	}
 
 	React.useEffect(() => {

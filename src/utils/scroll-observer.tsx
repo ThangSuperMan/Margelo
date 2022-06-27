@@ -16,7 +16,6 @@ const SizeObserver: React.FC<Props> = ({ children }) => {
 	const [scrollY, setScrollY] = React.useState<number>(0)
 
 	function handleScroll() {
-		console.log(window.scrollY)
 		setScrollY(window.scrollY)
 	}
 

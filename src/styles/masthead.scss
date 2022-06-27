@@ -1,24 +1,44 @@
-.banner {
+.active {
+	opacity: 1;
+}
+
+.unactive {
+	opacity: 0;
+	transform: translateY(-20px);
+}
+
+.masthead {
  	height: 100vh;
 	width: 100%;
-	position: relative;
+	position: sticky;
+	top: 0;
+	z-index: -1;
 
 		&__video {
-		// background-color: orange;
 		width: 100%;
 		height: 100%;
 		object-fit: cover;
 	}
 }
 
-.banner-content {
+.masthead-content {
+	height: 100vh;
 	color: #ffffff;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	position: absolute;
+	// background-color: orange;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
 	pointer-events: none;
 
+	&__logo {
+		padding-top: 4rem;
+	}
+	
 	&__title {
 		white-space: nowrap;
 		text-align: center;
@@ -36,5 +56,20 @@
 		line-height: 17.6px;
 		text-shadow: 0px 5px 3px rgba(0,0,0,0.4);
 		margin-bottom: .8rem;
+	}
+
+	&__arrow-down {
+		width: 62px;
+		height: 35px;
+		margin-bottom: 40px;
+		transition: all 0.3 ease-in-out;
+		transition-duration: 1s;
+
+		img {
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
+
+	 }
 	}
 }
