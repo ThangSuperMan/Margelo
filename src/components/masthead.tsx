@@ -12,20 +12,13 @@ const MastHead: React.FC = () => {
 
 	const { current: elContainer } = refContainer
 	if (elContainer) {
-		const { clientHeight } = elContainer
+		// Max progress is 100% just for performance purposes
 		progress = Math.min(1, scrollY / elContainer.clientHeight)
-
 	}
 
 	const handleImageLoaded = () => {
-		console.log('handleImageLoaded')
 		setImageLoaded(true)
 	}
-
-	React.useEffect(() => {
-		console.log('just mouted the masthead.tsx')
-		// console.log(imageLoaded)
-	}, [])
 
 	return (
 		<div
@@ -39,7 +32,9 @@ const MastHead: React.FC = () => {
 				<source src='/assets/masthead-bg.webm' type='video/webm' />
 			</video>
 			<div className='masthead-content'>
-				<div className='masthead-content__logo'>
+				<div className={`masthead-content__logo 
+  			${imageLoaded ? 'logo-active' : 'logo-unactive'}`}
+				>
 					<Logo width={42} height={42} />
 				</div>
 				<div>
@@ -48,7 +43,7 @@ const MastHead: React.FC = () => {
 				</div>
 				<div
 					className={`masthead-content__arrow-down 
-					${imageLoaded ? "active" : "unactive"}`
+					${imageLoaded ? "arrow-active" : "arrow-unactive"}`
 					}
 				>
 					<img
@@ -57,7 +52,7 @@ const MastHead: React.FC = () => {
 						src='/assets/arrow-down.webp' />
 				</div>
 			</div>
-		</div>
+		</div >
 	)
 }
 

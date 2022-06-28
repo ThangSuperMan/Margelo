@@ -1,8 +1,17 @@
-.active {
+// Animation 
+.logo-active {
 	opacity: 1;
 }
 
-.unactive {
+.logo-unactive {
+	opacity: 0;
+}
+
+.arrow-active {
+	opacity: 1;
+}
+
+.arrow-unactive {
 	opacity: 0;
 	transform: translateY(-20px);
 }
@@ -37,6 +46,7 @@
 
 	&__logo {
 		padding-top: 4rem;
+		transition: all 1s ease-in-out;
 	}
 	
 	&__title {
@@ -62,8 +72,7 @@
 		width: 62px;
 		height: 35px;
 		margin-bottom: 40px;
-		transition: all 0.3 ease-in-out;
-		transition-duration: 1s;
+		transition: all 1s ease-in-out;
 
 		img {
 		width: 100%;

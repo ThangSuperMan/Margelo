@@ -3,12 +3,15 @@
     height: 400px;
     position: sticky;
     top: 0;
-  transform: translateY(-20vh);
+    transform: translateY(-20vh);
     z-index: -1;
 
     div {
       position: absolute;
       background-color: pink;
+      width: 500px;
+      height: 500px;
+      border-radius: 100rem;
     }
 
     div:first-child {

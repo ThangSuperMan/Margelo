@@ -1,7 +1,8 @@
-import React, { useContext, useRef } from 'react'
+import React from 'react'
 import MastHead from './components/masthead'
-import ScrollObserver, { ScrollContenxt } from './utils/scroll-observer';
+import ScrollObserver from './utils/scroll-observer';
 import './App.scss';
+import AboutUs from './components/aboutus';
 
 function App() {
 
@@ -9,6 +10,7 @@ function App() {
     <ScrollObserver>
       <div className="app">
         <MastHead />
+        <AboutUs />
         <div className='box1'>500px</div>
         <div className='box2'>700px</div>
         <div className='box1'>500px</div>
