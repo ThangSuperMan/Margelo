@@ -26,36 +26,70 @@ const AboutUs: React.FC<Props> = () => {
 					name="Marc"
 					socialId="@mrousavy"
 					link="https://github.com"
+					linkStaticImage="/assets/margelo_faces_marc.svg"
 				/>
 				<Member
 					id="Marc"
-					name="Marc"
-					socialId="@mrousavy"
+					name="Szymon"
+					socialId="@szymon20000"
 					link="https://github.com"
+					linkStaticImage="/assets/margelo_faces_szymon.svg"
 				/>
 				<Member
 					id="Marc"
-					name="Marc"
-					socialId="@mrousavy"
+					name="Thomas"
+					socialId="@thomas-coldwell"
 					link="https://github.com"
+					linkStaticImage="/assets/margelo_faces_thomas.svg"
 				/>
 				<Member
 					id="Marc"
-					name="Marc"
-					socialId="@mrousavy"
+					name="Christoph"
+					socialId="@chrispader"
 					link="https://github.com"
+					linkStaticImage="/assets/margelo_faces_christoph.svg"
 				/>
 				<Member
 					id="Marc"
-					name="Marc"
-					socialId="@mrousavy"
+					name="Janic"
+					socialId="@janicduplessis"
 					link="https://github.com"
+					linkStaticImage="/assets/margelo_faces_janic.svg"
 				/>
 				<Member
 					id="Marc"
-					name="Marc"
-					socialId="@mrousavy"
+					name="Catalin"
+					socialId="@catalinmiron"
 					link="https://github.com"
+					linkStaticImage="/assets/margelo_faces_catalin.svg"
+				/>
+				<Member
+					id="Marc"
+					name="Mo"
+					socialId="@gorhom"
+					link="https://github.com"
+					linkStaticImage="/assets/margelo_faces_mo.svg"
+				/>
+				<Member
+					id="Marc"
+					name="Eric"
+					socialId="@ericvicenti"
+					link="https://github.com"
+					linkStaticImage="/assets/margelo_faces_eric.svg"
+				/>
+				<Member
+					id="Marc"
+					name="Matei"
+					socialId="@mateioprea"
+					link="https://github.com"
+					linkStaticImage="/assets/margelo_faces_matei.svg"
+				/>
+				<Member
+					id="Marc"
+					name="Viktoria"
+					socialId="@viktoria.psd"
+					link="https://github.com"
+					linkStaticImage="/assets/margelo_faces_viktoria.svg"
 				/>
 			</div>
 		</section>

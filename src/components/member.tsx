@@ -6,21 +6,30 @@ interface Props {
 	name: string;
 	socialId: string;
 	link: string;
+	linkStaticImage: string;
 }
 
-const Member: React.FC<Props> = ({ id, name, socialId, link }) => {
+const Member: React.FC<Props> = ({
+	id,
+	name,
+	socialId,
+	link,
+	linkStaticImage,
+}) => {
 	return (
 		<div className="member">
 			<img
 				className="member__image"
 				loading="lazy"
-				src="/assets/margelo_faces_marc.svg"
+				src={linkStaticImage}
 				alt="member"
 			/>
 			<div className="member__name">{name}</div>
-			<a href={link} className="member">
-				<span>{socialId}</span>
-			</a>
+			<div className="member__link">
+				<a href={link}>
+					<span>{socialId}</span>
+				</a>
+			</div>
 		</div>
 	);
 };
