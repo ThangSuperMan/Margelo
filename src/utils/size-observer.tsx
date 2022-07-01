@@ -1,27 +1,35 @@
-import React from 'react'
+import React, { useState } from "react";
+
+interface SizeValue {
+	innerWidth: number;
+}
+
+export const SizeContext = React.createContext<SizeValue>({
+	innerWidth: 0,
+});
 
 interface Props {
-	children: React.ReactElement
+	children: React.ReactElement;
 }
 
 const SizeObserver: React.FC<Props> = ({ children }) => {
+	const [innerWidth, setInnerWidth] = useState<number>(0);
 
 	function handleResize() {
-		console.log(window.innerWidth)
-		console.log('hi')
+		setInnerWidth(window.innerWidth);
 	}
 
 	React.useEffect(() => {
-		window.addEventListener('resize', handleResize)
+		window.addEventListener("resize", handleResize);
 
-		return () => window.removeEventListener('resize', handleResize)
-	}, [])
+		return () => window.removeEventListener("resize", handleResize);
+	}, []);
 
 	return (
-		<div>
+		<SizeContext.Provider value={{ innerWidth }}>
 			{children}
-		</div>
-	)
-}
+		</SizeContext.Provider>
+	);
+};
 
-export default SizeObserver
+export default SizeObserver;

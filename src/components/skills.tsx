@@ -9,6 +9,7 @@ const opacityForBlock = (sectionProgross: number, blockNumber: number) => {
 };
 
 const Skills: React.FC = () => {
+	console.log("hi there");
 	const { scrollY } = useContext(ScrollContenxt);
 	const refContainer = useRef<HTMLDivElement>(null);
 

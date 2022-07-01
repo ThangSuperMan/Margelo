@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react";
 
-const Learn: React.FC = () => {
-	return (
-		<div>Learn</div>
-	)
+interface Props {
+	title: string;
 }
 
-export default Learn
+const Learn: React.FC<Props> = ({ title }) => {
+	return <div>{title}</div>;
+};
+
+export default Learn;
