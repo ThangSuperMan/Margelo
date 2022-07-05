@@ -29,7 +29,7 @@ const MastHead: React.FC = () => {
 			}}
 		>
 			<video className="masthead__video" muted loop autoPlay>
-				<source src="./Margelo/assets/masthead-bg.webm" type="video/webm" />
+				<source src="/Margelo/assets/masthead-bg.webm" type="video/webm" />
 			</video>
 			<div className="masthead-content">
 				<div
@@ -51,7 +51,7 @@ const MastHead: React.FC = () => {
 					<img
 						onLoad={handleImageLoaded}
 						alt="scroll down"
-						src="/assets/arrow-down.webp"
+						src="/Margelo/assets/arrow-down.webp"
 					/>
 				</div>
 			</div>

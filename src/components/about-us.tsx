@@ -24,7 +24,7 @@ const AboutUs: React.FC = () => {
 					name="Marc"
 					socialId="@mrousavy"
 					link="https://github.com"
-					linkStaticImage="./Margelo/assets/margelo_faces_marc.svg"
+					linkStaticImage="/Margelo/assets/margelo_faces_marc.svg"
 				/>
 				<Member
 					id="Marc"
@@ -38,56 +38,56 @@ const AboutUs: React.FC = () => {
 					name="Thomas"
 					socialId="@thomas-coldwell"
 					link="https://github.com"
-					linkStaticImage="/assets/margelo_faces_thomas.svg"
+					linkStaticImage="/Margelo/assets/margelo_faces_thomas.svg"
 				/>
 				<Member
 					id="Marc"
 					name="Christoph"
 					socialId="@chrispader"
 					link="https://github.com"
-					linkStaticImage="/assets/margelo_faces_christoph.svg"
+					linkStaticImage="/Margelo/assets/margelo_faces_christoph.svg"
 				/>
 				<Member
 					id="Marc"
 					name="Janic"
 					socialId="@janicduplessis"
 					link="https://github.com"
-					linkStaticImage="/assets/margelo_faces_janic.svg"
+					linkStaticImage="/Margelo/assets/margelo_faces_janic.svg"
 				/>
 				<Member
 					id="Marc"
 					name="Catalin"
 					socialId="@catalinmiron"
 					link="https://github.com"
-					linkStaticImage="/assets/margelo_faces_catalin.svg"
+					linkStaticImage="/Margelo/assets/margelo_faces_catalin.svg"
 				/>
 				<Member
 					id="Marc"
 					name="Mo"
 					socialId="@gorhom"
 					link="https://github.com"
-					linkStaticImage="/assets/margelo_faces_mo.svg"
+					linkStaticImage="/Margelo/assets/margelo_faces_mo.svg"
 				/>
 				<Member
 					id="Marc"
 					name="Eric"
 					socialId="@ericvicenti"
 					link="https://github.com"
-					linkStaticImage="/assets/margelo_faces_eric.svg"
+					linkStaticImage="/Margelo/assets/margelo_faces_eric.svg"
 				/>
 				<Member
 					id="Marc"
 					name="Matei"
 					socialId="@mateioprea"
 					link="https://github.com"
-					linkStaticImage="/assets/margelo_faces_matei.svg"
+					linkStaticImage="/Margelo/assets/margelo_faces_matei.svg"
 				/>
 				<Member
 					id="Marc"
 					name="Viktoria"
 					socialId="@viktoria.psd"
 					link="https://github.com"
-					linkStaticImage="/assets/margelo_faces_viktoria.svg"
+					linkStaticImage="/Margelo/assets/margelo_faces_viktoria.svg"
 				/>
 			</div>
 		</section>
