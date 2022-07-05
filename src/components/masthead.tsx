@@ -29,7 +29,7 @@ const MastHead: React.FC = () => {
 			}}
 		>
 			<video className="masthead__video" muted loop autoPlay>
-				<source src="/assets/masthead-bg.webm" type="video/webm" />
+				<source src="./Margelo/assets/masthead-bg.webm" type="video/webm" />
 			</video>
 			<div className="masthead-content">
 				<div
