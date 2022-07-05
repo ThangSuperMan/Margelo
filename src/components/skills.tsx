@@ -1,6 +1,6 @@
 import React, { useContext, useRef } from "react";
-import "../styles/skills.scss";
 import { ScrollContenxt } from "../utils/scroll-observer";
+import "../styles/skills.scss";
 
 const opacityForBlock = (sectionProgross: number, blockNumber: number) => {
 	const progress = sectionProgross - blockNumber;
@@ -9,7 +9,6 @@ const opacityForBlock = (sectionProgross: number, blockNumber: number) => {
 };
 
 const Skills: React.FC = () => {
-	console.log("hi there");
 	const { scrollY } = useContext(ScrollContenxt);
 	const refContainer = useRef<HTMLDivElement>(null);
 

@@ -1,10 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../styles/about-us.scss";
 import Member from "./member";
 
-interface Props {}
+const AboutUs: React.FC = () => {
 
-const AboutUs: React.FC<Props> = () => {
 	return (
 		<section className="container">
 			<div>

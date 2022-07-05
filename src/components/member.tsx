@@ -2,20 +2,14 @@ import React from "react";
 import "../styles/member.scss";
 
 interface Props {
-	id: string;
+	id?: string;
 	name: string;
 	socialId: string;
 	link: string;
 	linkStaticImage: string;
 }
 
-const Member: React.FC<Props> = ({
-	id,
-	name,
-	socialId,
-	link,
-	linkStaticImage,
-}) => {
+const Member: React.FC<Props> = ({ name, socialId, link, linkStaticImage }) => {
 	return (
 		<div className="member">
 			<img

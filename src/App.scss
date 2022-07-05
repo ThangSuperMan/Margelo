@@ -1,21 +1,33 @@
 .app {
   width: 100%;
+  // Does not set the bakcground to make sure
+  // the masthead component still work well
 }
 
-.box1 {
-  width: 100%;
-  height: 500px;
-  background-color: orange;
-  border: 1px solid #333;
-  padding: 12px;
+.app-trusted {
+  padding-top: 13.4rem;
+  background-color: white;
+
+  &__title {
+    display: block;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 900;
+    line-height: 2.8rem;
+    margin-bottom: 4rem;
+  }
 }
 
-.box2 {
-  width: 100%;
-  height: 700px;
-  background-color: lightblue;
-  border: 1px solid #333;
-  padding: 8px;
-  display: grid;
-  place-items: center;
+.app-belive {
+  background-color: white;
+  padding-block: 14rem;
+
+  &__title {
+    font-size: 3rem;
+    letter-spacing: -0.54px;
+    padding-inline: 4rem;
+    font-weight: 500;
+    line-height: 5.6rem;
+    text-align: center;
+  }
 }

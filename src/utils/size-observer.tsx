@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 interface SizeValue {
 	innerWidth: number;
@@ -19,7 +19,8 @@ const SizeObserver: React.FC<Props> = ({ children }) => {
 		setInnerWidth(window.innerWidth);
 	}
 
-	React.useEffect(() => {
+	useEffect(() => {
+		handleResize();
 		window.addEventListener("resize", handleResize);
 
 		return () => window.removeEventListener("resize", handleResize);

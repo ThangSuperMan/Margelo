@@ -1,35 +1,35 @@
-import React from 'react'
+import React, { useEffect, useState } from "react";
 
 interface ScrollValue {
-	scrollY: number
+	scrollY: number;
 }
 
 export const ScrollContenxt = React.createContext<ScrollValue>({
-	scrollY: 0
-})
+	scrollY: 0,
+});
 
 interface Props {
-	children: React.ReactElement
+	children: React.ReactElement;
 }
 
 const SizeObserver: React.FC<Props> = ({ children }) => {
-	const [scrollY, setScrollY] = React.useState<number>(0)
+	const [scrollY, setScrollY] = useState<number>(0);
 
 	function handleScroll() {
-		setScrollY(window.scrollY)
+		setScrollY(window.scrollY);
 	}
 
-	React.useEffect(() => {
-		window.addEventListener('scroll', handleScroll)
+	useEffect(() => {
+		window.addEventListener("scroll", handleScroll);
 
-		return () => window.removeEventListener('scroll', handleScroll)
-	}, [])
+		return () => window.removeEventListener("scroll", handleScroll);
+	}, []);
 
 	return (
 		<ScrollContenxt.Provider value={{ scrollY }}>
 			{children}
 		</ScrollContenxt.Provider>
-	)
+	);
 };
 
 export default SizeObserver;

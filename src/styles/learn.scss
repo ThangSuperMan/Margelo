@@ -1,32 +1,24 @@
 .learn {
-    background-color: paleturquoise;
-    height: 400px;
-    position: sticky;
-    top: 0;
-    transform: translateY(-20vh);
-    z-index: -1;
+	background-color: pink;
+	overflow: hidden;
+	display: flex;
 
-    div {
-      position: absolute;
-      background-color: pink;
-      width: 500px;
-      height: 500px;
-      border-radius: 100rem;
-    }
 
-    div:first-child {
-      top: 100px;
-    }
+	&__item {
+		margin-inline: auto;
+		background-color: lightblue;
+		flex: 0 0 auo;
+		border: 1px solid #333;
+		padding: 4px;
+		max-width: 200px;
+		// min-width: min(70%, 500px);
+	}
 
-    div:nth-child(2) {
-      top: 200px;
-    }
-
-    div:nth-child(3) {
-      top: 300px;
-    }
-
-    div:nth-child(4) {
-      top: 400px;
-    }
+	&__item-modified {
+		background-color: orange;
+		width: 70%;
+		max-width: 500px;
+		// min-width: 70%
+	}
 }
+

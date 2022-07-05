@@ -33,7 +33,7 @@ const MastHead: React.FC = () => {
 			</video>
 			<div className="masthead-content">
 				<div
-					className={`masthead-content__logo 
+					className={`masthead-content__logo
   			${imageLoaded ? "logo-active" : "logo-unactive"}`}
 				>
 					<Logo width={42} height={42} />
@@ -45,7 +45,7 @@ const MastHead: React.FC = () => {
 					</h2>
 				</div>
 				<div
-					className={`masthead-content__arrow-down 
+					className={`masthead-content__arrow-down
 					${imageLoaded ? "arrow-active" : "arrow-unactive"}`}
 				>
 					<img
