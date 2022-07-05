@@ -1,4 +1,3 @@
-import React, { useEffect } from "react";
 import "../styles/about-us.scss";
 import Member from "./member";
 
@@ -25,7 +24,7 @@ const AboutUs: React.FC = () => {
 					name="Marc"
 					socialId="@mrousavy"
 					link="https://github.com"
-					linkStaticImage="/assets/margelo_faces_marc.svg"
+					linkStaticImage="./Margelo/assets/margelo_faces_marc.svg"
 				/>
 				<Member
 					id="Marc"
