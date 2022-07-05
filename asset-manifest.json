@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Margelo/static/css/main.276f1319.css",
-    "main.js": "/Margelo/static/js/main.f08a26b7.js",
+    "main.js": "/Margelo/static/js/main.bf6c142a.js",
     "static/media/SFPRODISPLAYMEDIUM.OTF": "/Margelo/static/media/SFPRODISPLAYMEDIUM.b85d841dacb040b84951.OTF",
     "index.html": "/Margelo/index.html",
     "main.276f1319.css.map": "/Margelo/static/css/main.276f1319.css.map",
-    "main.f08a26b7.js.map": "/Margelo/static/js/main.f08a26b7.js.map"
+    "main.bf6c142a.js.map": "/Margelo/static/js/main.bf6c142a.js.map"
   },
   "entrypoints": [
     "static/css/main.276f1319.css",
-    "static/js/main.f08a26b7.js"
+    "static/js/main.bf6c142a.js"
   ]
 }
