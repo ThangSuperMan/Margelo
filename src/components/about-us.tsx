@@ -31,7 +31,7 @@ const AboutUs: React.FC = () => {
 					name="Szymon"
 					socialId="@szymon20000"
 					link="https://github.com"
-					linkStaticImage="/assets/margelo_faces_szymon.svg"
+					linkStaticImage="/Margelo/assets/margelo_faces_szymon.svg"
 				/>
 				<Member
 					id="Marc"
